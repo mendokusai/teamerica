@@ -1,9 +1,8 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Yaps** is a Rails Application to connect Redditors through Chat and Websockets.
 
-Things you may want to cover:
+Project connects Users and allows cross connection via comments and posts.
 
 * Ruby version
 
