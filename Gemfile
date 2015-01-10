@@ -31,6 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'websocket-rails'
 
 gem 'devise'
+gem 'omniauth', '>= 1.0.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

@@ -73,6 +73,7 @@ GEM
       websocket-driver (>= 0.5.1)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
+    hashie (3.3.2)
     hike (1.2.3)
     hiredis (0.5.2)
     i18n (0.7.0)
@@ -94,6 +95,9 @@ GEM
     multi_json (1.10.1)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
+    omniauth (1.2.2)
+      hashie (>= 1.2, < 4)
+      rack (~> 1.0)
     orm_adapter (0.5.0)
     pg (0.18.1)
     rack (1.6.0)
@@ -201,6 +205,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  omniauth (>= 1.0.0)
   pg
   rails (= 4.2.0)
   rails_12factor
