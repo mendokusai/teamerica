@@ -16,12 +16,12 @@
 //= require_tree .
 //= require websocket_rails/main
 
-// $(function(){
-// 	dispatcher.bind('new', function(data) {
-// 	  console.log(data.message); // would output 'this is a message'
-// 	});
-// })
+$(document).ready(function(){
+	var dispatcher = new WebSocketRails('localhost:3000/websocket');
 
-$(function(){
-	alert("hi");
+	dispatcher.bind('connected', connected);
+	dipatcher.on_open = function(data){
+		$('#messages').append("<h1>" + connected + "</h1>");
+	}
 })
+

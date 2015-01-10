@@ -9,7 +9,7 @@ WebsocketRails::EventMap.describe do
 
 
   # subscribe :new, :to => ChatController, :with_method => :new
-
+  subscribe :connected, to: ChatController, with_method: :new
 
 # or the equivalent
 # subscribe :event_name, 'event#action_method'
