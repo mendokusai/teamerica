@@ -1,4 +1,7 @@
 class ChatContollerController < WebsocketRails::BaseController
+
+  def index
+  end
 	
 	def initialize_session
     # perform application setup here
