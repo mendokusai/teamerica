@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require websocket_rails/main
+
+// $(function(){
+// 	dispatcher.bind('new', function(data) {
+// 	  console.log(data.message); // would output 'this is a message'
+// 	});
+// })
