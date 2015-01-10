@@ -17,7 +17,11 @@
 //= require websocket_rails/main
 
 $(document).ready(function(){
-	var dispatcher = new WebSocketRails('localhost:3000/websocket');
+
+	 //heroku
+	var dispatcher = new WebSocketRails('yaps.herokuapp.com/websocket');
+	 //local
+	// var dispatcher = new WebSocketRails('localhost:3000/websocket');
 
 	dispatcher.bind('connected', connected);
 	dipatcher.on_open = function(data){
