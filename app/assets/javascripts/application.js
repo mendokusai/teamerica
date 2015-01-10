@@ -21,3 +21,7 @@
 // 	  console.log(data.message); // would output 'this is a message'
 // 	});
 // })
+
+$(function(){
+	alert("hi");
+})
