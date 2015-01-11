@@ -6,11 +6,9 @@ WebsocketRails::EventMap.describe do
   # Uncomment and edit the next line to handle the client connected event:
   #   subscribe :client_connected, :to => Controller, :with_method => :method_name
   #
-
-
-  # subscribe :new, :to => ChatController, :with_method => :new
-  subscribe :connected, to: ChatController, with_method: :new
-
+  subscribe :initialize_session, 'chat#new'
+  subscribe :create, 'chat#new_connection'
+# subscribe :message_test, to: ChatController, with_method: :new
 # or the equivalent
 # subscribe :event_name, 'event#action_method'
 
