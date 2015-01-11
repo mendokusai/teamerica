@@ -12,7 +12,11 @@ $(document).ready(function(){
 	
 	$('#send_button').on('click', function(){
 		var text = $('#send_text').val();
-		$('#messages').append("<li>" + text + "</li>");
+		if (text.length > 0){
+			//add a dispatch task here...
+			$('#messages').append("<li>" + text + "</li>");
+		};
+		$('#send_text').val("");
 	});
 
 	// dispatcher.bind('initialize_session', function(data){
